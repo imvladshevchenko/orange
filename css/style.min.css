@@ -145,7 +145,6 @@ button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  transform: translateX(-1.5em);
 }
 .list-item__img {
   width: 6.6em;
@@ -159,7 +158,6 @@ button {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: row;
-  max-width: 35.5em;
   flex-wrap: wrap;
   opacity: 0;
   -webkit-animation: appearance 0.9s ease-in-out;
@@ -611,7 +609,6 @@ button {
   .list-item:last-child,
   .list-item {
     justify-content: center;
-    max-width: 80em;
   }
   .list-item__img {
     width: 16.8em;
