@@ -105,29 +105,29 @@ button {
 .header__logo {
   width: 14.64em;
 }
-.space1 {
+.orange {
   position: absolute;
   right: 0;
   top: 3em;
 }
-.space1 > img {
+.orange > img {
   width: 100em;
 }
-.space2 {
+.coins {
   position: absolute;
   left: 0;
   top: 0;
 }
-.space2 > img {
+.coins > img {
   width: 100em;
 }
-.space3 {
+.flowers {
   position: absolute;
   right: 49%;
   top: 54%;
   transform: translate(50%, -50%);
 }
-.space3 > img {
+.flowers > img {
   width: 64.4em;
 }
 .main {
@@ -580,25 +580,25 @@ button {
   .header__logo {
     width: 32.74em;
   }
-  .space1 {
+  .orange {
     right: -60em;
     top: 18em;
   }
-  .space1 > img {
+  .orange > img {
     width: 250em;
   }
-  .space2 {
+  .coins {
     left: -84em;
     top: 31em;
   }
-  .space2 > img {
+  .coins > img {
     width: 215em;
   }
-  .space3 {
+  .flowers {
     right: 46%;
     top: 54%;
   }
-  .space3 > img {
+  .flowers > img {
     width: 145.4em;
   }
   .list {
