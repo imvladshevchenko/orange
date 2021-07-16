@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>Orange</title>
+  <link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="">
+      <img class="header__logo" src="./img/desktop/logo.png" alt="logo" />
+    </a>
+  </header>
+  <div class="wrapper">
+    <div class="space1">
+      <img src="./img/desktop/orange.png" alt="" />
+    </div>
+    <div class="space2" id="coins">
+      <img src="./img/desktop/coins.png" alt="" />
+    </div>
+    <div class="space3">
+      <img src="./img/desktop/flowers.png" alt="" />
+    </div>
+
+
+    <div class="wheel-wrapper">
+      <img class="wheel--outside" src="./img/desktop/arrow.png" alt="wheel-outside" />
+      <img class="wheel--inside" id="wheel" src="./img/desktop/roulette.png" alt="wheel-inside" />
+      <div class="wheel-btn" id="button" onclick="animation()">
+        <img src="./img/desktop/btn.png" alt="" />
+      </div>
+    </div>
+    <div class="modal__flowers" id="flowers">
+      <img src="./img/desktop/flowers2.png" alt="">
+    </div>
+    <div class="modal__popup-coins" id="mobileCoins"><img src="./img/mobile/mob-popup-coins.png" alt=""></div>
+    <div class="modal" id="modal">
+      <div class="modal__circle"></div>
+      <img class="modal__fortune-wheel" id="fortuneWheel" src="./img/desktop/fortune-wheel.png" alt="">
+      <div class="modal__text-wrapper" id="firstWrapper">
+        <span class="modal__text">YOU WON</span>
+        <span class="modal__text">one more spin</span>
+      </div>
+      <div class="modal__text-wrapper" id="secondWrapper">
+        <span class="modal__text">YOU WON</span>
+        <span class="modal__text">up to $2500 bonus</span>
+        <span class="modal__text">on deposit</span>
+        <span class="modal__text">& 200 free spins</span>
+      </div>
+      <div class="modal__button" id="getPrizes" onclick="closeModal()">
+        <p id="buttonText">Spin again</p>
+      </div>
+      <a class="modal__button" href="/" id="redirectLink">
+        <p id="buttonText">Get bonus</p>
+      </a>
+      <!-- <div class="modal__close-button" id="closePopup" onclick="closeModal()"></div> -->
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <main class="main">
+    <div class="container">
+      <ul class="list">
+        <li class="list-item">
+          <span>SPIN</span>
+          <span>THE</span>
+          <span>WHEEL</span>
+        </li>
+        <li class="list-item">
+          <span>&</span>
+          <span>COLLECT</span>
+          <span>PRIZES</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">
+      18+ | Please gamble responsibly | Mobile Incorporated is licensed by the MGA | MGA/B2C/818/2020 | rgf.org.mt |
+      <a>Full terms</a> for bonuses apply
+    </p>
+  </footer>
+
+  <script src="js/bundle.js"></script>
+</body>
+
+</html>
