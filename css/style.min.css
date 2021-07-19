@@ -56,7 +56,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   font-size: 1vw;
-  height: 70.6em;
+  height: 50.6em;
   overflow-y: scroll;
   background-color: #ffd200;
 }
@@ -97,13 +97,17 @@ button {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 4em;
+  height: 3.4em;
   background-color: #282828;
   margin-bottom: 3.4em;
   z-index: 1;
 }
+.header > a {
+  display: flex;
+  align-items: center;
+}
 .header__logo {
-  width: 14.64em;
+  width: 12.84em;
 }
 .orange {
   position: absolute;
@@ -115,25 +119,27 @@ button {
 }
 .coins {
   position: absolute;
-  left: 0;
+  left: 17em;
   top: 0;
 }
 .coins > img {
-  width: 100em;
+  width: 65em;
 }
 .flowers {
   position: absolute;
   right: 49%;
-  top: 54%;
+  top: 50%;
   transform: translate(50%, -50%);
 }
 .flowers > img {
-  width: 64.4em;
+  width: 46.4em;
 }
 .main {
   z-index: 1;
   width: 100%;
-  max-width: 82.25em;
+  max-width: 68.25em;
+  display: flex;
+    justify-content: center;
 }
 .list {
   display: -webkit-box;
@@ -164,10 +170,11 @@ button {
   animation: appearance 0.9s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  max-width: 24em;
 }
 .list-item > span {
   font-family: Roboto-black;
-  font-size: 3.5em;
+  font-size: 2.5em;
   color: #ffce00;
   font-weight: 900;
   line-height: 1.64;
@@ -224,15 +231,15 @@ button {
 .wheel--outside {
   display: block;
   position: absolute;
-  top: 16.1em;
-  width: 4.2em;
+  top: 8.1em;
+  width: 3.2em;
   z-index: 10;
 }
 .wheel--inside {
   display: block;
   position: absolute;
-  top: 16.7em;
-  width: 40.2em;
+  top: 8.7em;
+  width: 32.2em;
   animation: planet-spining 2s ease-in-out infinite;
 }
 @keyframes planet-spining {
@@ -407,7 +414,7 @@ button {
 .wheel-btn {
   position: absolute;
   left: 50%;
-  top: 32.6em;
+  top: 21.6em;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -428,7 +435,7 @@ button {
   cursor: pointer;
 }
 .wheel-btn > img {
-  width: 8.6em;
+  width: 6.6em;
 }
 .animation-in-process {
   pointer-events: none;
@@ -442,9 +449,9 @@ button {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  top: 12em;
-  width: 51em;
-  height: 51em;
+  top: 4em;
+  width: 38em;
+  height: 38em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -459,18 +466,18 @@ button {
   -ms-flex-align: center;
   align-items: center;
   z-index: 0;
-  padding-top: 6.5em;
+  padding-top: 4.5em;
 }
 .modal__flowers {
   position: absolute;
   right: 49%;
-  top: 54%;
+  top: 46%;
   transform: translate(50%, -50%);
   z-index: 12;
   display: none;
 }
 .modal__flowers > img {
-  width: 64.4em;
+  width: 50.4em;
 }
 .modal__circle {
   position: absolute;
@@ -479,13 +486,14 @@ button {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 48em;
-  height: 48em;
+  width: 35em;
+  height: 35em;
   border-radius: 50%;
 }
 .modal__fortune-wheel {
   z-index: 1;
-  margin-bottom: 2.7em;
+  margin-bottom: 2.2em;
+  width: 3.5em;
 }
 .modal__title {
   font-family: Roboto-black;
@@ -510,7 +518,7 @@ button {
   background-color: #ff9000;
   padding: 0.5em 1.3em;
   font-family: Calibri;
-  font-size: 2.975em;
+  font-size: 2.5em;
   text-align: center;
   color: #fff;
   letter-spacing: 3.15px;
@@ -535,7 +543,7 @@ button {
 }
 .modal__text {
   font-family: Calibri;
-  font-size: 3.5em;
+  font-size: 2.5em;
   color: #5214b9;
   margin: 0 auto;
   background-color: #ffffff;
@@ -559,7 +567,7 @@ button {
 }
 .footer__text {
   font-family: Roboto-medium;
-  font-size: 1.7em;
+  font-size: 1.3em;
   line-height: 1.5;
   letter-spacing: 1.8px;
   text-align: center;
@@ -572,6 +580,11 @@ button {
 .modal__popup-coins {
   display: none;
 }
+#redirectLink {
+  display: none;
+  font-size: 2.1em;
+}
+
 @media screen and (max-width: 500px) {
   .header {
     height: 9.5em;
@@ -609,6 +622,7 @@ button {
   .list-item:last-child,
   .list-item {
     justify-content: center;
+    max-width: 85em;
   }
   .list-item__img {
     width: 16.8em;
@@ -665,6 +679,7 @@ button {
     font-size: 5.375em;
     -webkit-text-size-adjust: 88%;
     letter-spacing: 1.5px;
+    cursor: pointer;
   }
   .modal__popup-coins {
     display: none;
@@ -712,12 +727,7 @@ button {
   #secondWrapper {
       margin-bottom: 4.5em;
   }
-}
-@media (min-width: 500px) {
-  .cosmonaut-mobile {
-    display: none;
+  #redirectLink {
+    font-size: 5.375em;
   }
-}
-#redirectLink {
-  display: none;
 }
